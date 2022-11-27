@@ -1,0 +1,44 @@
+[
+    {
+    "id": "ufo1",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+},
+    {
+    "id": "ufo2",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+},
+    {
+    "id": "ufo3",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+},
+    {
+    "id": "ufo4",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+},
+    {
+    "id": "ufo5",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+},
+    {
+    "id": "ufo6",
+    "picture_src": "./res/placeholder.jpg",
+    "placeholderTxt": "Roswell.jpg",
+    "Location": "Roswell",
+    "Date": 1947
+}
+]

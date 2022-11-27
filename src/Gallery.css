@@ -1,0 +1,12 @@
+.PicGallery {
+  display: flex;
+  /* padding: 3vh; */
+  background-color: rgb(52, 52, 52);
+  /* margin: auto; */
+  /* margin-top: 10vh; */
+  width: 81%;
+  color: white;
+  border-radius: 23px;
+  max-width: 1670px;
+  flex-wrap: wrap;
+}
