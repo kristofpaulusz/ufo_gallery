@@ -1,10 +1,11 @@
 import "./Gallery.css";
+import Large from "./Large";
 import Picture from "./Picture";
 const myArray = [
   {
     id: "ufo1",
     // picture_src: "./res/placeholder.jpg",
-    picture_src: "res/placeholder.jpg",
+    picture_src: "res/rswel.jpg",
     placeholderTxt: "Roswell.jpg",
     location: "Roswell",
     date: 1947,
@@ -20,30 +21,30 @@ const myArray = [
     id: "ufo3",
     picture_src: "res/placeholder.jpg",
     placeholderTxt: "Roswell.jpg",
-    location: "Roswell",
-    date: 1947,
+    location: "Hudson Valley",
+    date: 1980,
   },
   {
     id: "ufo4",
-    picture_src: "res/placeholder.jpg",
-    placeholderTxt: "Roswell.jpg",
-    location: "Roswell",
-    date: 1947,
+    picture_src: "res/pacific.png",
+    placeholderTxt: "pacific.png",
+    location: "Pacific Ocean",
+    date: 2019,
   },
   {
     id: "ufo5",
     picture_src: "res/placeholder.jpg",
-    placeholderTxt: "Roswell.jpg",
-    location: "Roswell",
-    date: 1947,
+    placeholderTxt: "placeholder.jpg",
+    location: "N/A",
+    date: 1000,
   },
   {
     id: "ufo6",
     picture_src: "res/placeholder.jpg",
-    placeholderTxt: "Roswell.jpg",
-    location: "Roswell",
-    date: 1947,
-  },
+    placeholderTxt: "placeholder.jpg",
+    location: "N/A",
+    date: 1000,
+  }
 ];
 // function srcKiszed(adat) {
 //   let l = String(adat);
@@ -53,19 +54,19 @@ const myArray = [
 function Gallery() {
   return (
     <div className="PicGallery">
+    
       {myArray.map((event) => {
-        // {
-        //   console.log(event.picture_src);
-        // }
         return (
           <Picture
             location={event.location}
             date={event.date}
             key={event.id}
             imageSrc={event.picture_src}
+            identity = {event.id}
           />
         );
       })}
+      
     </div>
   );
 }
