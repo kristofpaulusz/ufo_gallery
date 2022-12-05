@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./Gallery.css";
 import Large from "./Large";
+import Model from "./Model/Model";
 import Picture from "./Picture";
 const myArray = [
   {
@@ -44,7 +46,7 @@ const myArray = [
     placeholderTxt: "placeholder.jpg",
     location: "N/A",
     date: 1000,
-  }
+  },
 ];
 // function srcKiszed(adat) {
 //   let l = String(adat);
@@ -52,9 +54,19 @@ const myArray = [
 //   return require(l);
 // }
 function Gallery() {
+  const model = new Model(myArray[0].picture_src);
+  const [largePic, setLarge] = useState(model.getCurrent());
+  function setImage(src) {
+    setLarge(src);
+  }
   return (
     <div className="PicGallery">
-    
+      {/* <button
+        onClick={() => {
+          setLarge(model.getCurrent());
+        }}
+      ></button> */}
+      <Large current={largePic} />
       {myArray.map((event) => {
         return (
           <Picture
@@ -62,11 +74,11 @@ function Gallery() {
             date={event.date}
             key={event.id}
             imageSrc={event.picture_src}
-            identity = {event.id}
+            identity={event.id}
+            ev={setImage}
           />
         );
       })}
-      
     </div>
   );
 }

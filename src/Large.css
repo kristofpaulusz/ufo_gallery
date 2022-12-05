@@ -1,0 +1,8 @@
+.large {
+  /* width: 30vh; */
+  width: 70%;
+  margin: auto;
+}
+.large img {
+  width: 100%;
+}
